@@ -7,3 +7,51 @@
   font-size: 2em;
   text-align: center;
 }
+
+.Stepper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Step {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.StepLineThrough {
+  position: absolute;
+  height: 2px;
+  top: 45px;
+  left: calc(-50% + 16px);
+  right: calc(50% + 15px);
+  background-color: #e4e8ebf5;
+}
+.StepLineThroughDone {
+  background-color: #de4290;
+}
+
+.StepName {
+  margin-bottom: 10px;
+}
+
+.StepShape {
+  width: 25px;
+  height: 25px;
+  border: 3px solid #de4290;
+  border-radius: 50%;
+}
+
+.stepDone {
+  background-color: #de4290;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stepDoneIcon {
+  height: 15px;
+  width: 15px;
+}
