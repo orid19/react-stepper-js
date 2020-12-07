@@ -1,11 +1,11 @@
 import React from 'react'
 
-import Steeper from 'react-stepper-js'
+import Stepper from 'react-stepper-js'
 import 'react-stepper-js/dist/index.css'
 
 const App = () => {
   return (
-    <Steeper
+    <Stepper
       color='#18aed6'
       fontSize='20px'
       fontColor="#18aed6"

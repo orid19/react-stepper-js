@@ -1,6 +1,6 @@
 {
   "name": "react-stepper-js",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Stepper component for react",
   "author": "Ori Deri",
   "license": "MIT",
@@ -8,6 +8,14 @@
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
+  "keywords": [
+    "stepper",
+    "react-stepper",
+    "react stepper",
+    "react",
+    "npm react stepper",
+    "stepper-react"
+  ],
   "engines": {
     "node": ">=10"
   },

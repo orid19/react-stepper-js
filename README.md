@@ -15,21 +15,22 @@ npm install --save react-stepper-js
 ```jsx
 import React, { Component } from 'react'
 
-import Steeper from 'react-stepper-js'
+import Stepper from 'react-stepper-js'
 import 'react-stepper-js/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <Steeper
+    return <Stepper
       color="#23b561"
       fontSize="20px"
+      fontColor="#18aed6"
       steps={[
         { label: "step 1" },
         { label: "step 2" },
         { label: "step 3" },
         { label: "step 4" }
       ]}
-      currentStep={4}
+      currentStep={3}
     />
   }
 }
