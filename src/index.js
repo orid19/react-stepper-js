@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './styles.module.css'
 import Step from './Step'
 
-const Stepper = ({ steps, currentStep, fontSize, color }) => {
+const Stepper = ({ steps, currentStep, fontSize, fontColor, color }) => {
   const defualtStep = 1
 
   return (
@@ -18,6 +18,7 @@ const Stepper = ({ steps, currentStep, fontSize, color }) => {
           isCompleted={currentStep >= i + defualtStep}
           fontSize={fontSize}
           color={color}
+          fontColor={fontColor}
         />
       ))}
     </div>

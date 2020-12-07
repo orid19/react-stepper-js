@@ -1,7 +1,7 @@
 # react-stepper-js
 
 > Stepper component for react
-
+![](react-stepper-js-demo.png)
 [![NPM](https://img.shields.io/npm/v/react-stepper-js.svg)](https://www.npmjs.com/package/react-stepper-js) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install

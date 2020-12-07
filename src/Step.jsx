@@ -8,6 +8,7 @@ const Step = ({
   showLine,
   showVIcon,
   fontSize,
+  fontColor,
   color
 }) => {
   return (
@@ -18,7 +19,10 @@ const Step = ({
           style={{ backgroundColor: isCompleted ? color || '#000000' : '' }}
         ></div>
       )}
-      <div style={{ fontSize: fontSize || '24px' }} className={styles.StepName}>
+      <div
+        style={{ color: fontColor || '#000000', fontSize: fontSize || '24px' }}
+        className={styles.StepName}
+      >
         {label}
       </div>
       <div
