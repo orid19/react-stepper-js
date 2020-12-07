@@ -9,6 +9,7 @@
 }
 
 .Stepper {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -24,7 +25,7 @@
 .StepLineThrough {
   position: absolute;
   height: 2px;
-  top: 45px;
+  top: 55px;
   left: calc(-50% + 16px);
   right: calc(50% + 15px);
   background-color: #e4e8ebf5;
@@ -34,7 +35,9 @@
 }
 
 .StepName {
-  margin-bottom: 10px;
+  font-size: 24px;
+  height: 40px;
+  line-height: 40px;
 }
 
 .StepShape {

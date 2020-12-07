@@ -1,18 +1,31 @@
 import React from 'react'
 import styles from './styles.module.css'
 
-const Step = ({ isCompleted, label, shape, showLine, showVIcon }) => {
+const Step = ({
+  isCompleted,
+  label,
+  shape,
+  showLine,
+  showVIcon,
+  fontSize,
+  color
+}) => {
   return (
     <div className={styles.Step}>
       {showLine && (
         <div
-          className={`${styles.StepLineThrough} ${
-            isCompleted ? styles.StepLineThroughDone : ''
-          }`}
+          className={`${styles.StepLineThrough}`}
+          style={{ backgroundColor: isCompleted ? color || '#000000' : '' }}
         ></div>
       )}
-      <div className={styles.StepName}>{label}</div>
+      <div style={{ fontSize: fontSize || '24px' }} className={styles.StepName}>
+        {label}
+      </div>
       <div
+        style={{
+          backgroundColor: isCompleted ? color || '#000000' : '',
+          borderColor: color || '#000000'
+        }}
         className={`${styles.StepShape} ${isCompleted ? styles.stepDone : ''}`}
       >
         {showVIcon && (
@@ -26,9 +39,9 @@ const Step = ({ isCompleted, label, shape, showLine, showVIcon }) => {
             <g
               id='icons/20/v'
               stroke='none'
-              stroke-width='1'
+              strokeWidth='1'
               fill='none'
-              fill-rule='evenodd'
+              fillRule='evenodd'
             >
               <polygon
                 id='Shape'

@@ -1,16 +1,27 @@
 import React from 'react'
 import styles from './styles.module.css'
-import Stepper from './Stepper'
+import Step from './Step'
 
-export const ExampleComponent = ({ text }) => {
+const Stepper = ({ steps, currentStep, fontSize, color }) => {
+  const defualtStep = 1
+
   return (
-    <Stepper
-      steps={[
-        { label: 'step1' },
-        { label: 'step2' },
-        { label: 'step3' }
-      ]}
-      currentStep={2}
-    />
+    <div className={styles.Stepper}>
+      {steps?.map((step, i) => (
+        <Step
+          key={i}
+          label={step.label}
+          showLine={i > 0}
+          showVIcon={
+            currentStep === steps?.length || currentStep > i + defualtStep
+          }
+          isCompleted={currentStep >= i + defualtStep}
+          fontSize={fontSize}
+          color={color}
+        />
+      ))}
+    </div>
   )
 }
+
+export default Stepper
